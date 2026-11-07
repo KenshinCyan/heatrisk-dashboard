@@ -169,12 +169,6 @@ def draw_map(df, value_col, title):
     return fig
 
 # ----------------------------------------------------------- page
-st.markdown('<div class="eyebrow">Barangay heat hazard forecast · Metro Manila</div>', unsafe_allow_html=True)
-st.title('Which barangays face hazardous heat tomorrow?')
-st.markdown('<div class="subtitle">Next-day DOST-PAGASA heat index category for 1,710 barangays, from a hybrid Attention-LSTM and XGBoost model, '
-            'with the reasons behind each forecast. Categories use the daily-mean heat index, which runs lower than PAGASA\'s afternoon peak.</div>',
-            unsafe_allow_html=True)
-
 ctl1, ctl2, ctl3 = st.columns([1.3, 1.2, 1])
 with ctl1:
     mode = st.radio('View', ['Live forecast', f"Replay {meta['test_year']}"], horizontal=True)
@@ -276,7 +270,3 @@ with c2:
         st.plotly_chart(f3, use_container_width=True, config={'displayModeBar': False})
     else:
         st.caption('The SHAP and attention panels appear in the live view.')
-
-st.markdown(f"""<div class="foot">Weather: Open-Meteo (live forecast model; trained on ERA5 reanalysis). Surface temperature and vegetation: Landsat 8/9 and Sentinel-2
-monthly composites as of {meta['spatial_as_of']}. Population: PSA 2020 Census. Boundaries: HDX COD-AB (CC BY-IGO).
-A research prototype that complements, and does not replace, official DOST-PAGASA heat advisories.</div>""", unsafe_allow_html=True)
