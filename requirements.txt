@@ -7,3 +7,4 @@ numpy==2.4.6
 streamlit>=1.40
 plotly>=5.24
 requests>=2.31
+scikit-learn>=1.5
