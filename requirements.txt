@@ -1,0 +1,9 @@
+# Pinned to the versions used in the Colab training run, so the saved models load.
+tensorflow==2.21.0
+keras==3.13.2
+xgboost==3.4.1
+pandas==2.2.3
+numpy==2.4.6
+streamlit>=1.40
+plotly>=5.24
+requests>=2.31

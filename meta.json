@@ -1,0 +1,114 @@
+{
+ "met_features": [
+  "temperature_c",
+  "humidity_pct",
+  "wind_speed_ms",
+  "solar_rad",
+  "heat_index_c"
+ ],
+ "spatial_features": [
+  "lst_c",
+  "ndvi",
+  "pop_density_log"
+ ],
+ "met_min": [
+  21.799999237060547,
+  56.0,
+  0.5899999737739563,
+  1.850000023841858,
+  22.046112060546875
+ ],
+ "met_max": [
+  32.599998474121094,
+  97.0,
+  9.109999656677246,
+  27.56999969482422,
+  39.377281188964844
+ ],
+ "spa_min": [
+  8.64405345916748,
+  -0.927448034286499,
+  4.541164875030518
+ ],
+ "spa_max": [
+  71.68414306640625,
+  0.8474127650260925,
+  13.097953796386719
+ ],
+ "lag_window": 14,
+ "lead_days": 1,
+ "n_trees": 102,
+ "class_names": [
+  "Not Hazardous",
+  "Caution",
+  "Extreme Caution or higher"
+ ],
+ "class_colors": [
+  "#4caf50",
+  "#f2c500",
+  "#f28c28"
+ ],
+ "model_classes_pagasa_index": [
+  0,
+  1,
+  2
+ ],
+ "pagasa_bounds": [
+  27.0,
+  33.0,
+  42.0,
+  52.0
+ ],
+ "feature_names": [
+  "Temporal emb. 1",
+  "Temporal emb. 2",
+  "Temporal emb. 3",
+  "Temporal emb. 4",
+  "Temporal emb. 5",
+  "Temporal emb. 6",
+  "Temporal emb. 7",
+  "Temporal emb. 8",
+  "Temporal emb. 9",
+  "Temporal emb. 10",
+  "Temporal emb. 11",
+  "Temporal emb. 12",
+  "Temporal emb. 13",
+  "Temporal emb. 14",
+  "Temporal emb. 15",
+  "Temporal emb. 16",
+  "Temporal emb. 17",
+  "Temporal emb. 18",
+  "Temporal emb. 19",
+  "Temporal emb. 20",
+  "Temporal emb. 21",
+  "Temporal emb. 22",
+  "Temporal emb. 23",
+  "Temporal emb. 24",
+  "Temporal emb. 25",
+  "Temporal emb. 26",
+  "Temporal emb. 27",
+  "Temporal emb. 28",
+  "Temporal emb. 29",
+  "Temporal emb. 30",
+  "Temporal emb. 31",
+  "Temporal emb. 32",
+  "Temperature (today)",
+  "Relative humidity (today)",
+  "Wind speed (today)",
+  "Solar radiation (today)",
+  "Heat index (today)",
+  "LST (previous month)",
+  "NDVI (previous month)",
+  "Population density (log)"
+ ],
+ "train_years": [
+  2022,
+  2023,
+  2024
+ ],
+ "test_year": 2025,
+ "spatial_as_of": "2025-12-31",
+ "weather_model_training": [
+  "era5_seamless"
+ ]
+}
